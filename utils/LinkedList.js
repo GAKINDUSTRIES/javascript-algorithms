@@ -14,7 +14,7 @@ class LinkedList {
   print() {
     let current = this._head;
     let arr = [];
-    while (current !== null) {
+    while (current != null) {
       arr.push(current.getVal());
       current = current.next();
     }
@@ -23,6 +23,10 @@ class LinkedList {
 
   getHead() {
     return this._head;
+  }
+
+  setHead(node) {
+    this._head = node;
   }
 }
 
@@ -42,6 +46,10 @@ class ListNode {
 
   getVal() {
     return this._val;
+  }
+
+  setVal(val) {
+    this._val = val;
   }
 }
 
