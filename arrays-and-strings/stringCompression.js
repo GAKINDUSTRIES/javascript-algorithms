@@ -29,9 +29,7 @@ const stringCompression = str => {
   counter = 0;
   let newStr = '';
   for (strChar of str) {
-    if (currentChar === '') {
-      counter++;
-    } else if (currentChar !== strChar){
+    if (currentChar !== strChar){ {
       newStr = appendChar(newStr, currentChar, counter);
       counter = 1;
       currentChar = strChar;
